@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+         
+    @font-face {
+  font-family: '190810_3-Regular';
+  src: url('190810_3-Regular.eot?#iefix') format('embedded-opentype'),  url('190810_3-Regular.otf')  format('opentype'),
+	     url('190810_3-Regular.woff') format('woff'), url('190810_3-Regular.ttf')  format('truetype'), url('190810_3-Regular.svg#190810_3-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            padding: 0%;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li, .contact ul li {
+            float: left;
+        }
+        nav{
+            padding: 17px;
+            padding-left: 25px;
+            background-color: black;
+            color:white;
+        }
+        nav ul li{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 23px;
+            margin-right: 40px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            text-decoration: underline;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            /*border: 1px solid red;*/
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            /*border: 1px solid red;*/
+            height: 880px;
+            flex-shrink: 0;
+        }
+        #fontTest{
+            padding-top: 30px;
+            font-size: 130px;
+            letter-spacing: 5px;
+            word-spacing: 18px;
+            word-break: keep-all;
+            line-height: 240px;
+            padding-left: 20px;
+            padding-right: 60px;
+            font-family: '190810_3-Regular';
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 60%;
+            flex-shrink: 1;
+            /*border: 1px solid red;*/
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 40%;
+            flex-shrink: 0;
+            /*border: 1px solid red;*/
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            /*border: 1px solid red;*/
+        }
+        .control{
+            display: flex;
+            flex-direction: row;
+            /*border: 1px solid red;*/
+        }
+        #intro{
+            display: flex;
+            flex-direction: row;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            /*border: 1px solid red;*/
+            padding-right: 20px;
+        }
+        footer{
+            /*border: 1px solid red;*/
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: auto;
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+        #fontTest,#title{
+            writing-mode: vertical-rl;
+        }
+        #intro{
+            margin: 10px;
+            word-break: keep-all;
+           /*border: 1px solid red;*/
+        }
+        #intro ul{
+            line-height: 25px;
+        }
+        .contact ul{
+            font-family: 'Noto Sans KR', sans-serif;
+            /*border: 1px solid red;*/
+            margin-right: 24px;
+            float: right;
+        }
+        .contact ul li{
+            padding: 0;
+            writing-mode: vertical-rl;
+            margin-top: 40px;
+            float: right;
+            font-size: 19px;
+        }
+        #intro ul{
+            padding: 0%;
+        }
+        #text{
+            /*border: 1px solid red;*/
+            font-family: 'Noto Sans KR', sans-serif;
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 180px;
+            padding-bottom: 30px;
+            font-size: 19px;
+        }
+        #text ul {
+            line-height: 32px;
+        }
+        #title{
+            font-family: '190810_3-Regular';
+            margin-right: 20px;
+            font-size: 50px;
+        }
+        #print, #paragraph, #typeset{
+            font-size: 20px;
+            /*border: 1px solid red;*/
+        }
+        #print{
+            flex-basis: 170px;
+        }
+        #paragraph{
+            flex-basis: 150px;
+            height: 300px;
+            font-size: 18px;
+        }
+        #print{
+            padding-left: 22px;
+            font-size: 18px;
+        }
+        button{
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        #paragraph{
+            display: flex;
+            flex-direction: row;
+        }
+        #typeset{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            margin-top: 8px;
+        }
+        #typeset label{
+            font-size: 16px;
+            margin-top: 3px;
+            margin-bottom: 27px;
+        }
+        #typeset input[type=range] {
+            -webkit-appearance: none; /*기본 스타일 적용 삭제*/
+        }
+        #typeset input[type=range]::-webkit-slider-runnable-track { /*트랙*/
+            cursor: pointer;
+            height: 1px;
+            background: black;
+        }
+        #typeset input[type=range]::-webkit-slider-thumb { /*버튼*/
+            background: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            height: 15px;
+            width: 15px;
+            -webkit-appearance: none;
+            margin-top: -6px;
+        }
+        .button button{
+            float: right;
+            margin-bottom: 18px;
+            cursor: pointer;
+            background: white;
+            width: 43px;
+            height: 25px;
+            font-size: 15px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .button button:hover{
+            background-color: rgb(220,220,220);
+        }
+        .button button:visited{
+            background-color: rgb(220,220,220);
+        }
+
+        #textchange{
+            margin-bottom: 10px;
+            margin-top: 1px;
+        }
+        .button{
+            flex-basis:30px;
+        }
+        .content{
+            border-left: 1.3px solid black;
+            margin-top:25px;
+            height: 900px;
+        }
+        .control{
+            font-family: 'Noto Sans KR', sans-serif;
+            padding-top: 35px;
+            border-top: 1.3px solid black;
+            width: 600px;
+            margin-left: 30px;
+        }
+        #printbutton{
+            cursor: pointer;
+            border: 1px solid black;
+            color: white;
+            padding-left: 8px;
+            padding-right: 8px;
+            background-color: black;
+        }
+        @media print{
+            nav{background-color: white;
+                border-bottom: 1px solid black;
+                }
+            nav ul li a {
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">조판 테스트</a></li>
+                <li><a href="#">제작 과정</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+
+                <div id="fontTest">누구든지 체포 또는 구속을 당한 때에는</div>
+                <footer>
+                    * 2019년 8월 6일에 수정된 활자체입니다.
+                </footer>
+
+            </article>
+
+            <aside>
+
+                <div class="content">
+                    <div class="content2">
+                    <div id="intro">
+                        <div id="text">
+                        <ul>
+                            <li>2018 - 2020</li>
+                            <li>본문용 부리체 </li> <br><br>
+                            <li>싶이 청춘의 이상의 과실이 이 청춘의 것은 풍부하게 것이다. 그들의 사랑의 그들의 우리의 심장은 청춘의 과실이 끓는다. 이상의 노래하며 이상 대한 풀이 피에 것이다. 거선의 붙잡아 뼈 뜨고, 물방아 아니다. 두기 같은 풀밭에 위하여, 별과 바이며, 설산에서 말이다. 밥을 인간의 보이는 내는 예가 투명하되 반짝이는 피가 것이다. 풀이 많이 밝은 봄날의 긴지라 끓는 찾아다녀도, 때문이다. 이것을 관현악이며, 바이며, 눈에 기쁘며, 청춘이 설레는 예수는 쓸쓸하랴? 품고 찾아 목숨을 </li>
+                        </ul>
+                    </div>
+                        <div class="contact">
+                            <div id="title">푸른솔</div>
+                            <ul>
+                                <li>임수진</li>
+                                <li>sujinlim02@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="control">
+                        <div id="print">
+                            <a id="printbutton" onClick="print();">인쇄</a>
+                        </div>
+                        <div id="paragraph">
+                            <span> Style : </span>
+                            <div class="button">
+                            <button id="textchange" onclick="textchange()">제목</button>
+                            <button id="textchange" onclick="textchange2()">본문</button>
+                            </div>
+                        </div>
+                        <div id="typeset">        
+                            <input id="sizeInput" type="range" min="5" max="200" value="100px;" oninput="updateSize()"> 
+                            <label id="size">Size</label>
+                            <input id="spacingInput" type="range" min="-50" max="20" value="6" oninput="updateSpacing()">
+                            <label id="space">Spacing</label>
+                            <input id="wordspaceinput" type="range" min="-10" max="50" value="5" oninput="updatewordspace()">
+                            <label id="word-space">word-spacing</label>
+                            <input id="heightInput" type="range" min="10" max="240" value="170" oninput="updateHeight()">
+                            <label id="height">Line-height</label>   
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <!---------------------------java script--------------------------->
+    <script type="text/javascript">
+        function textchange() {
+            document.getElementById("fontTest").innerHTML = "누구든지 체포 또는 구속을 당한 때에는";
+        }
+
+        function textchange2() { 
+            document.getElementById("fontTest").innerHTML= '&nbsp;'+'「제목」' + "<br>" + "<br>" + '것은 인생을 관현악이며 지는 따뜻한 인생을 위하여 반짝이는 역사를 것이다.얼음에 이는 이상은 있을 청춘에서만 같이,커다란 것이다.새 미묘한 가진 심장은 대한 것이다.석가는 무엇을 것이다.보라,만물은 이상은 무한한 안고,무엇이 때문이다.낙원을 위하여 사는가 설산에서 인간에 것이다.할지라도 설레는 얼마나 든 아니다.뭇 보는 얼마나 피가 인생에 노래하며 끓는 내려온 뿐이다.품었기 따뜻한 날카로우나 풀이 전인 바이며,할지니,이것을 예수는 철환하였는가 무엇을 바로 인생에 기관과 원질이 피가 간에 위하여 인간에 것이다.역사를 사랑의 보이는 황금시대다.같지 있을 실현에 소금이라 밥을 우리 있는가 따뜻한 피는 것이 석가는 황금시대의 것이다.미묘한 모래뿐일 뼈 열매를 것은 싶이 구하지 천자만홍이 그리하였는가 소금이라 반짝이는 것은 날카로우나 위하여 아름다우냐 날카로우나 뼈 위하여,어디 사막이다.무한한 가는 꽃이 위하여서 설레는 때문이다.충분히 창공에 그것을 하여도 낙원을 없으면 사막이다.청춘의 사람은 얼마나 위하여 있을 약동하다.';
+            document.getElementById("fontTest").style.fontSize = 18 + "px";
+            document.getElementById("fontTest").style.lineHeight = 45 + "px";
+            document.getElementById("fontTest").style.letterSpacing = 2 + "px";
+            document.getElementById("fontTest").style.wordSpacing = 3 + "px";
+
+            document.getElementById("fontTest").style.height= 700+"px";
+            document.getElementById("fontTest").style.paddingTop= 45+"px";
+        }
+
+        function updateSize() {
+        var v = document.getElementById("sizeInput").value;
+        var v2 = document.getElementById("sizeInput").value;
+        v2 = (v2*6/10);
+        v2 = parseInt(v2);
+        document.getElementById("fontTest").style.fontSize = v + "px";
+        document.getElementById("size").innerHTML  = " Size " + v2 + "px";
+        }
+        function updateSpacing() {
+        var v = document.getElementById("spacingInput").value;
+        document.getElementById("fontTest").style.letterSpacing = v + "px";
+        document.getElementById("space").innerHTML = " Space " + v + "px";
+        }
+        function updatewordspace() {
+        var v = document.getElementById("wordspaceinput").value;
+        document.getElementById("fontTest").style.wordSpacing = v + "px";
+        document.getElementById("word-space").innerHTML = " word-space " + v + "px";
+        }
+        function updateHeight() {
+        var v = document.getElementById("heightInput").value;
+        var v2 = document.getElementById("heightInput").value;
+        v2 = (v2*5/10);
+        v2 = parseInt(v2);
+        document.getElementById("fontTest").style.lineHeight = v + "px";
+        document.getElementById("height").innerHTML = "Height "+ v2 + "px";
+        }
+    </script>
+</body>
+</html>
